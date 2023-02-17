@@ -1,0 +1,76 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(250, 6, 153);
+}
+.menus{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.menus li{
+    margin: 0 10px;
+    font-size: 20px;
+}
+.bottom{
+    background-color: rgb(60, 57, 57);
+}
+.footer{
+    background-color: #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contacts{
+    margin: 5px;
+    text-align: left;
+}
+.contacts ul{
+    list-style: none;
+
+}
+.contacts ul li{
+    margin: 3px;
+    color: #fff;
+}
+
+.links{
+    margin: 5px;
+    text-align: left;
+}
+.links ul{
+    list-style: none;
+}
+.links ul li{
+    margin: 3px;
+    color: #fff;
+}
+.links ul li:hover{
+    color: rgb(248, 6, 47);
+
+}
+.socials{
+    margin: 5px;
+    text-align: left;
+}
+.socials ul{
+    list-style: none;
+}
+.socials ul li{
+    margin: 3px;
+    color: #fff;
+}
+.socials ul li:hover{
+    color: rgb(248, 6, 47);
+
+}
+.home{
+    height: 70vh;
+}
