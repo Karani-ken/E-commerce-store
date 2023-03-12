@@ -1,4 +1,4 @@
-# programming-club-project
+# E-commerce store
 
 this is an E-commerce Store that utilises modern aspects of web development
 
