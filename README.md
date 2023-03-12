@@ -7,6 +7,7 @@ React framework
 Redux for state management
 node js for backed api
 cloudinary platform for product images
+tailwind css library for styling
 
 it include a products page, navigation bar, footer and a shopping cart
 
