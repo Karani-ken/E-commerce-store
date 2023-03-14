@@ -25,7 +25,7 @@ const cartSlice = createSlice({
                     state.cartItems.push(tempProduct)
                     toast.success(`${action.payload.name} added to cart`,{
                         position:'top-center'
-                    })
+                    })  
                 }
 
            
