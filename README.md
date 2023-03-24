@@ -13,4 +13,4 @@ it include a products page, navigation bar, footer and a shopping cart
 
 also a payment method will be added soon.
 
-NB: its still in development not yet completed!!
+
