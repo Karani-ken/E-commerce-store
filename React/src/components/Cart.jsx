@@ -1,12 +1,18 @@
 import { Link } from 'react-router-dom'
 import { useSelector, useDispatch} from 'react-redux'
-import { removeFromCart } from '../features/cartSlice'
+import { addToCart, decreaseCart, removeFromCart } from '../features/cartSlice'
 function Cart() {
   const cart = useSelector(state => state.cart)
   const dispatch = useDispatch()
 
   const handleRemoveCartItem = (cartItem) =>{
     dispatch(removeFromCart(cartItem))
+  }
+  const handleDecreaseCartQuantity =(cartItem)=>{
+    dispatch(decreaseCart(cartItem))
+  }
+  const handleIncreaseCartQuantity =(cartItem)=>{
+    dispatch(addToCart(cartItem))
   }
   return (
     <div className='w-full min-h-[60vh] bg-white'>
@@ -44,9 +50,9 @@ function Cart() {
                   <td className='text-left font-bold text-green-600 '>${cartItem.price}</td>
                   <td>
                     <div className='flex justify-start items-center  border-[1px] w-24 rounded-lg shadow-md shadow-black'>
-                      <button className=' text-rose-400 font-black m-2 '>-</button>
+                      <button className=' text-rose-400 font-black m-2 ' onClick={()=> handleDecreaseCartQuantity(cartItem)}>-</button>
                       <p className='p-3 m-2'>{cartItem.cartQuantity}</p>
-                      <button className=' text-blue-500 font-black m-2 '>+</button>
+                      <button className=' text-blue-500 font-black m-2 ' onClick={()=> handleIncreaseCartQuantity(cartItem)}>+</button>
                     </div>
                   </td>
                   <td>
