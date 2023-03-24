@@ -42,18 +42,9 @@ const Home = () => {
                                         </div>
 
                                         <div className='flex justify-evenly items-start'>
-                                            <span>
-                                                <p>Quantity</p>
-                                                <select id="categories" className='border bg-slate-300 rounded-sm h-8 m-2'>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">4</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select>
-                                            </span>
+                                           
 
-                                            <h3 className='m-5 font-black text-green-600'>${product.price}</h3>
+                                            <h3 className='m-5 font-black text-green-600'>price: ${product.price}</h3>
                                         </div>
                                         <div className='flex justify-center items-center'>
                                             <button className='p-1 bg-blue-700 rounded-lg 
